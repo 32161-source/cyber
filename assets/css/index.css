@@ -1,52 +1,55 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: #999;
-}
-main{
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-}
-#hero{
-    width: 100%;
-    height: 25vh;
-    float: left;
-    background: yellow;
-}
-#personagens{
-    width: 100%;
-    height: 30vh;
-    float: left;
-    background: green;
-}
-.personagem{
-    width: 15%;
-    height: 25vh;
-    float: left;
-    background: #fff;
-    margin-left: 4.16%;
-    margin-top: 2.5vh;
-    border-radius: 12px;
+
+body {
+    background-color: #ec0303;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
-.personagem img{
-    height: 100%;
-    width: auto;
-    filter: grayscale(100%);
-    transition: filter 0.5s ease;
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
 }
-.personagem img:hover{
-    filter: grayscale(0%);
-}
-#video{
+
+.card img {
     width: 100%;
-    height: 50vh;
-    float: left;
-    background: red;
+    height: 250px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 10px;
+}
+
+.card h2 {
+    color: black;
+    font-size: 24px;
+}
+
+.card h3 {
+    color: red;
+    font-size: 18px;
+}
+
+.card p {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card a {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: darkred;
 }
